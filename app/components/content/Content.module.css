@@ -10,18 +10,28 @@
 }
 
 .name {
+  align-self: flex-start;
   gap: 1rem;
   font-size: 35px;
   letter-spacing: 0.5rem;
-  animation: show-name 1s;
+  color: var(--font-color-1);
+}
+
+.name p:nth-child(1) {
+  animation: var(--show-left);
+}
+
+.name p:nth-child(2) {
+  animation: var(--show-right);
 }
 
 .text {
+  text-align: center;
   width: 60%;
   color: var(--font-color-1);
   font-size: var(--font-size-text);
   line-height: 1.5rem;
-  animation: show-text 1s;
+  animation: var(--show-up);
 }
 
 .hero_about {
@@ -35,23 +45,5 @@
   top: 55%;
   left: 10%; 
   width: 25%;
-  animation: show-avatar 1s;
-}
-
-@keyframes show-name {
-  0% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes show-avatar {
-  0% {
-    transform: translateY(100%);
-  }
-}
-
-@keyframes show-text {
-  0% {
-    transform: translateX(100%);
-  }
+  animation: var(--show-bottom);
 }

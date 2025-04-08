@@ -7,7 +7,7 @@ export const Content = () => {
       <section className={`${cl.hero_hi}`}>
           <img src="/photos/avatar.jpg" alt="not found" className={cl.avatar} />
         <div className={`max_1000 row_between ${cl.hero_hi_present}`}>
-          <div className={`center_column ${cl.name}`} style={{alignSelf: "flex-start"}}>
+          <div className={`center_column ${cl.name}`} >
             <p>VLADIMIR</p>
             <p>ZOZULYA</p>
           </div>

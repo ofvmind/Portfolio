@@ -8,8 +8,9 @@
 }
 
 :root {
-  --bg-one: rgb(34, 31, 31);
-  --bg-two: rgb(223, 41, 8);
+  --bg-two: rgb(182, 178, 178);
+  --bg-one: rgb(0, 0, 0);
+
 
   /* font-color */
 
@@ -21,6 +22,13 @@
   --font-size-big: 32px;
   --font-size-text: 18px;
   --bold: bold;
+
+  /* animation */
+  
+  --show-up: show-up 1s;
+  --show-right: show-right 1s;
+  --show-bottom: show-bottom 1s;
+  --show-left: show-left 1s;
 }
 
 body {
@@ -73,3 +81,30 @@ section {
   align-items: center;
   width: 100%;
 }
+
+/* Анимации */
+
+@keyframes show-up {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes show-right {
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes show-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes show-left {
+  0% {
+    transform: translateX(-100%);
+  }
+}
+

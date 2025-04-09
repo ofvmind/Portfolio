@@ -12,19 +12,22 @@
   --bg-one: rgb(0, 0, 0);
 
 
-  /* font-color */
+  /* color */
 
-  --font-color-1: #000;
-  --font-color-2: #ccc;
+  --color-1: #000;
+  --color-2: #ccc;
 
   /* font-size */
   
+  --font-size-very-big: 42px;
   --font-size-big: 32px;
+  --font-size-normal: 22px;
   --font-size-text: 18px;
   --bold: bold;
 
   /* animation */
   
+  --show: show 1s;
   --show-up: show-up 1s;
   --show-right: show-right 1s;
   --show-bottom: show-bottom 1s;
@@ -72,6 +75,8 @@ body {
 
 .max_1000 {
   max-width: 1000px;
+  width: 96%;
+  padding: 0 20px 0 40px;
 }
 
 section {
@@ -82,28 +87,44 @@ section {
   width: 100%;
 }
 
+/* Отступы блоков */
+
+.padding_85 {
+  padding: 85px 0 85px 0;
+}
+
 /* Анимации */
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+}
 
 @keyframes show-up {
   0% {
+    opacity: 0;
     transform: translateY(-100%);
   }
 }
 
 @keyframes show-right {
   0% {
+    opacity: 0;
     transform: translateX(100%);
   }
 }
 
 @keyframes show-bottom {
   0% {
+    opacity: 0;
     transform: translateY(100%);
   }
 }
 
 @keyframes show-left {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
 }

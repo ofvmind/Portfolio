@@ -5,9 +5,11 @@ export const Content = () => {
   return (
     <>
       <section className={`${cl.hero_hi}`}>
-          <img src="/photos/avatar.jpg" alt="not found" className={cl.avatar} />
-        <div className={`max_1000 row_between ${cl.hero_hi_present}`}>
-          <div className={`center_column ${cl.name}`} >
+        <img src="/photos/avatar.jpg" alt="not found" className={cl.avatar} />
+        <div
+          className={`max_1000 row_between padding_85 ${cl.hero_hi_present}`}
+        >
+          <div className={`center_column ${cl.name}`}>
             <p>VLADIMIR</p>
             <p>ZOZULYA</p>
           </div>
@@ -25,7 +27,37 @@ export const Content = () => {
           </p>
         </div>
       </section>
-      <section className={`${cl.hero_about}`}></section>
+      <section className={`center padding_85 ${cl.hero_about}`}>
+        <div className={cl.title}>
+          <p>My Skills</p>
+        </div>
+        <div className={`center ${cl.skills}`}>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/html.png" alt="" />
+            <p>HTML 5</p>
+          </div>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/css.jfif" alt="" />
+            <p>CSS 3</p>
+          </div>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/js.png" alt="" />
+            <p>Java Script</p>
+          </div>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/react.png" alt="" />
+            <p>React</p>
+          </div>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/next.jpg" alt="" />
+            <p>Next.js</p>
+          </div>
+          <div className={`center_column ${cl.skill_div}`}>
+            <img className={`${cl.skill_img}`} src="/icons/node.png" alt="" />
+            <p>Node.js</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -3,7 +3,14 @@
   flex-direction: row;
   background-color: var(--bg-two);
   width: 100%;
-  height: 30rem;
+}
+
+.avatar {
+  position: absolute;
+  top: 55%;
+  left: 10%; 
+  width: 16%;
+  animation: var(--show-bottom);
 }
 
 .hero_hi_present {
@@ -14,7 +21,7 @@
   gap: 1rem;
   font-size: 35px;
   letter-spacing: 0.5rem;
-  color: var(--font-color-1);
+  color: var(--color-1);
 }
 
 .name p:nth-child(1) {
@@ -28,7 +35,7 @@
 .text {
   text-align: center;
   width: 60%;
-  color: var(--font-color-1);
+  color: var(--color-1);
   font-size: var(--font-size-text);
   line-height: 1.5rem;
   animation: var(--show-up);
@@ -36,14 +43,55 @@
 
 .hero_about {
   background-color: var(--bg-one);
-  width: 100%;
-  height: 500px;
+  gap: 100px;
 }
 
-.avatar {
+.skills {
+  color: var(--color-2);
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.skill_div {
+  width: 20%;
+  margin-bottom: 40px;
+}
+.skill_div p {
+  margin-top: 10%;
+  color: var(--color-2);
+  font-size: var(--font-size-normal);
+}
+.skill_img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.title {
+  color: var(--color-2);
+  position: relative;
+  font-size: var(--font-size-big);
+  animation: var(--show);
+}
+
+.title::before {
   position: absolute;
-  top: 55%;
-  left: 10%; 
-  width: 25%;
-  animation: var(--show-bottom);
+  content: "";
+  top: 40%;
+  left: -125%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-2);
+  animation: var(--show-left);
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  top: 40%;
+  right: -125%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-2);
+  animation: var(--show-right);
 }

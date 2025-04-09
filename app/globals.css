@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-roboto);
+  text-decoration: none;
 }
 
 :root {
@@ -24,6 +25,10 @@
   --font-size-normal: 22px;
   --font-size-text: 18px;
   --bold: bold;
+
+  /* shadows */
+
+  --shadow-black: 4px 4px 20px #000;
 
   /* animation */
   
